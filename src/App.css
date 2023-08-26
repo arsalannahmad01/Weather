@@ -1,5 +1,18 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
+  background-color: rgb(106, 162, 172);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction:row;
 }
 
 .App-logo {
@@ -13,16 +26,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;
@@ -35,4 +38,100 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.half {
+  flex: 1; 
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.input-card {
+  min-width: 400px;
+  max-width: 400px;
+  height: fit-content;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.input-card img {
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.input-card-content {
+  padding: 20px;
+}
+
+.input-card-content input[type="text"] {
+  width: 90%;
+  padding: 15px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 25px auto;
+  font-size: 20px;
+}
+
+.input-card-content button {
+  width: 95%;
+  background-color: #414346;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 20px 20px;
+  margin-top: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.input-card-content button:hover {
+  background-color: #898b8d;
+}
+
+.footer {
+  border-top: 1px solid;
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  width: 50%;
+  border-right: 1px solid;
+  padding: 15px;
+}
+
+.right {
+  width: 50%;
+  padding: 15px;
+}
+
+.content-card {
+  min-width: 400px;
+  max-width: 400px;
+  height: fit-content;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.content-header {
+  display: flex;
+  gap: 10px;margin-bottom: 20px;
+}
+
+.content-header button {
+  border: none;
+  cursor: pointer;
 }
