@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./App.css";
 import axios from "axios";
 import HumidityIcon from "./humidity.png";
-import WeatherIcon from "./Weather.png";
 import TempIcon from "./temprature.png";
 import BackIcon from "./BackIcon.png";
 import WeatherMap from "./weatherMap.jpg";
@@ -13,7 +12,7 @@ function App() {
   const [error, setError] = useState(null);
 
   const fetchWeatherData = async () => {
-    
+
     axios.get(`https://wether-nn8l.onrender.com/external/?location=${location}`).then((response) => {
       setData(response.data);
       setError(null)
